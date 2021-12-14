@@ -9,6 +9,7 @@ public class DisplayDigitsOfNumber {
         System.out.println("Please enter any number: ");
         Scanner scan = new Scanner(System.in);
         int number = scan.nextInt();
+        System.out.println("The digits of the given number are: ");
         int remainder = 0;
 
         while(number>0){

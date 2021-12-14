@@ -1,0 +1,9 @@
+#Details
+#Tue Nov 23 12:37:17 IST 2021
+lastName=Katta
+firstname=Rohit
+address=1070 Bhawani peth, Ashwini Complex. Pune-411042
+daughterName=Kiara
+ageOfSpouse=26
+spouseName=Kavya
+age=31

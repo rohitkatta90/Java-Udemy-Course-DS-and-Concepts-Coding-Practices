@@ -26,7 +26,7 @@ public class FindDuplicateElementsInArray {
 
     public static void main(String args[]){
 
-        String arr[]={"Java","C","C++","Java","Python","C1"};
+        String arr[]={"Java","C","C++","Java","Python","C"};
         boolean flag=false;
         HashSet<String> hs = new HashSet<>();
         for(String l:arr){

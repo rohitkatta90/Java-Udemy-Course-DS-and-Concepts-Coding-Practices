@@ -17,9 +17,9 @@ public class ReverseNumber {
         int revNum=0;
 
         System.out.println("Number is: "+number);
-        while(number>0){
+        while(number!=0){
             remainder = (number%10);
-            revNum = (revNum*10)+remainder;
+            revNum = (revNum*10)+remainder; // This is the important step.
             number=number/10;
         }
 

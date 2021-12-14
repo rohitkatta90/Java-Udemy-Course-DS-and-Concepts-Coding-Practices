@@ -17,7 +17,7 @@ public class PrintDigitToWord {
         System.out.println("Number is: " + number);
         while (number > 0) {
             remainder = (number % 10);
-            str = str+remainder;
+            str = str+remainder; // This is the important step, each digit of the interger is being added to the string type variable.
             number = number / 10;
         }
 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Details</comment>
+<entry key="lastName">Katta</entry>
+<entry key="firstname">Rohit</entry>
+<entry key="address">1070 Bhawani peth, Ashwini Complex. Pune-411042</entry>
+<entry key="daughterName">Kiara</entry>
+<entry key="ageOfSpouse">26</entry>
+<entry key="spouseName">Kavya</entry>
+<entry key="age">31</entry>
+</properties>

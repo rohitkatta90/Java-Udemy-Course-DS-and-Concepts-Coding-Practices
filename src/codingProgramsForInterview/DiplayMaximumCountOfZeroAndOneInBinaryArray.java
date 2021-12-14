@@ -4,7 +4,6 @@ public class DiplayMaximumCountOfZeroAndOneInBinaryArray {
 
     public static int maxConsecutiveOne(int A[]){
         int maxCountOfOne=0;
-        int maxCountOfZero=0;
         int count = 0;
 
         for(int i=0;i<A.length;i++){
@@ -18,7 +17,6 @@ public class DiplayMaximumCountOfZeroAndOneInBinaryArray {
         return maxCountOfOne;
     }
     public static int maxConsecutiveZero(int A[]){
-        //int maxCountOfOne=0;
         int maxCountOfZero=0;
         int count = 0;
 
