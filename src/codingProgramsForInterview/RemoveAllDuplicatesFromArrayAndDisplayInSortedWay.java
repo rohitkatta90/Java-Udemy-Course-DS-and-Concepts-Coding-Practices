@@ -28,10 +28,10 @@ public class RemoveAllDuplicatesFromArrayAndDisplayInSortedWay {
         int[] num={100,45,1,78,98,56,44,78,100,98};
         boolean flag=false;
         TreeSet<Integer> ts = new TreeSet<>(); //Tree Set / Set never accepts duplicates and since it is sorted set, it displays in sorted order.
-        for(Integer l:num){
+        for(int l:num){
             ts.add(l);
         }
-        for(Integer l:ts){
+        for(int l:ts){
             System.out.println(l);
         }
     }

@@ -11,7 +11,7 @@ public class PairsFromArrayWhoSumToGivenNumberInSortedArray {
         //int A[] =  {1,0,3,5,2,3,6};
         int low=0;
         int high= A.length-1;
-        int sum=15;
+        int sum=25;
 
         while(low<high){
             if(A[low]+A[high]>sum){
