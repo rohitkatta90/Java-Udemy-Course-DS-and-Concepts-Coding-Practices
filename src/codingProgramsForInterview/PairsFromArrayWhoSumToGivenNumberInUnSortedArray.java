@@ -41,7 +41,8 @@ public class PairsFromArrayWhoSumToGivenNumberInUnSortedArray {
 
 
     public static void main(String args[]){
-        int A[] = {2,7,11,12,13,14,15};
+        //int A[] = {2,7,11,12,13,14,15};
+        int A[] = {2,12,15,7,13,14,11};
         int target=27;
 
         //int A[] =  {1,0,3,5,2,3,6};

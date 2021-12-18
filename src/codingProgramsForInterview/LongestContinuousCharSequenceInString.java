@@ -31,11 +31,10 @@ public class LongestContinuousCharSequenceInString {
                 currentSequence = 1; // re-initialize counter
             }
         }
-        /*if (currentSequence > largestSequence) { // Check if last string
-            // sequence is longest
+        if (currentSequence > largestSequence) { // Check if last string sequence is longest
             largestSequence = currentSequence;
             longestChar = current;
-        }*/
+        }
 
         System.out.println("Longest character sequence is of character "
                 + longestChar + " and is " + largestSequence + " long");

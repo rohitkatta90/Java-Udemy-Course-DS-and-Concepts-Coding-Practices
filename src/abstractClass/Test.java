@@ -1,43 +1,46 @@
 package abstractClass;
 
+import java.util.HashSet;
+
 public class Test {
 
-  public static void main(String args[]){
-      int A[] =  {1,2,3,4,5,6,7,8,9,10,11,12,13,14,14,15,16,17,18,19,20};
-      int length = A.length;
-      int target = 25;
-      //bruteforceMethod(A, length, target);
-      optimalMethod(A, length, target);
-  }
+    static String myString = "aabbbcccccccccddddddd";
+    static int longestNumOfChar = 0;
+    static char longestChar = '\0';
 
-    private static void optimalMethod(int[] a, int length, int target) {
+    public static void main(String args[]) {
 
-      int low=0;
-      int high = length-1;
+        int currentNumberofOccurences = 1;
+        if(myString.length() == 0){
+            System.out.println("Invalid String...");
+        }
+        else{
 
-      while(low < high){
-          if(a[low] + a[high] < target){
-              low++;
-          }else if(a[low] + a[high] > target){
-              high--;
-          }else if(a[low] + a[high] == target){
-              System.out.println("["+a[low]+","+a[high]+"]");
-              high--;
-              low++;
-          }
-      }
+            for(int i = 0; i < myString.length()-1 ; i++){
+                char current = myString.charAt(i);
+                char next = myString.charAt(i+1);
+
+                if(current == next){
+                    currentNumberofOccurences+=1;
+
+
+                }else if(currentNumberofOccurences > longestNumOfChar){
+                    longestNumOfChar = currentNumberofOccurences;
+                    longestChar = current;
+                }else{
+                    currentNumberofOccurences=1;
+                }
+                if(currentNumberofOccurences > longestNumOfChar){
+                    longestNumOfChar = currentNumberofOccurences;
+                    longestChar = current;
+                }
+            }
+
+            System.out.println(longestChar + "-->"+longestNumOfChar);
+        }
     }
 
-    public static void bruteforceMethod(int A[], int length, int target) {
 
-      for(int i = 0 ; i < length ; i++){
-          for(int j = i+1 ; j < length ; j++){
-
-              if(A[i] == target - A[j]){
-                  System.out.println("["+A[i]+","+A[j]+"]");
-              }
-          }
-      }
-
-    }
 }
+
+

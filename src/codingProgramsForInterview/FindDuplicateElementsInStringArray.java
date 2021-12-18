@@ -2,7 +2,7 @@ package codingProgramsForInterview;
 
 import java.util.HashSet;
 
-public class FindDuplicateElementsInArray {
+public class FindDuplicateElementsInStringArray {
 
     // APPROACH -1
 
