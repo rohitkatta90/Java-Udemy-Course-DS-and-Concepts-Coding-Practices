@@ -1,6 +1,9 @@
 package udemyDSCourseByHolczerBalazs.arraysPrograms;
 
 import java.lang.reflect.Array;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 /*
 The problem is that we want to find duplicates in a T[] one-dimensional array of integers in O(N) running time
@@ -21,7 +24,7 @@ Pre Condition: All values in array should be smaller than the array size.
  */
 public class RepeatedIntegersInArrayProblem {
 
-    public void solve(int[] array){
+    public void absValueWay(int[] array){
 
         // this is why it is an O(N) running time algorithm
         for(int i=0;i<array.length;i++){
@@ -34,4 +37,38 @@ public class RepeatedIntegersInArrayProblem {
             }
         }
     }
+
+    public void bruteForce(int[] array){
+
+        for(int i =0 ; i < array.length ; i++){
+            for(int j = i+1 ; j < array.length ; j++){
+                if(array[i] ==  array[j]){
+                    System.out.println(array[i]+" is repeated");
+                }
+            }
+        }
+
+    }
+
+    public void hashMapWay(int[] array) {
+
+        HashMap<Integer, Integer> numbers_count = new HashMap<>();
+        for (int i = 0; i < array.length; i++) {
+            if (numbers_count.containsKey(array[i])) {
+                numbers_count.put(array[i], numbers_count.get(array[i]) + 1);
+            } else {
+                numbers_count.put(array[i], 1);
+            }
+        }
+        System.out.println(numbers_count.toString());
+        for(Map.Entry<Integer, Integer> entry: numbers_count.entrySet()){
+
+            if(entry.getValue() >= 2){
+                System.out.print(entry.getKey()+ " is repeated");
+            }
+
+        }
+
+    }
+
 }
